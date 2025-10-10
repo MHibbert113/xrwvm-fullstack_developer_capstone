@@ -147,9 +147,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
 
-ALLOWED_HOSTS = ['localhost',
-                 'https://mhibbert113-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.'
-                 'proxy.cognitiveclass.ai'
+ALLOWED_HOSTS = [
+    'localhost',
+    (
+        'https://mhibbert113-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.'
+        'proxy.cognitiveclass.ai'
+    ),
 ]
 CSRF_TRUSTED_ORIGINS = [
     'https://mhibbert113-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.'
